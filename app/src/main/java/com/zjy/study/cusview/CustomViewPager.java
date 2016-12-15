@@ -5,7 +5,9 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
-
+/**
+ * 自定义ViewPager,解决在ScrollView中viewpager无法准确计算自身高度
+ */
 public class CustomViewPager extends ViewPager {
 
     public CustomViewPager(Context context) {
