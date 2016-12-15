@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/min_header_height"
+            android:background="@mipmap/pic_1"
+            />
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@android:color/white"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hed"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ED535A"
+        android:gravity="center"
+        android:text="导航栏"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>
